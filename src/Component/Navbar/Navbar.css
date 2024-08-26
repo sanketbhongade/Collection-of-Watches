@@ -1,0 +1,14 @@
+
+
+.company-name{
+    color: white;
+}
+
+.company-name:hover{
+    color: rgb(168, 62, 62);
+}
+
+.watch-logo{
+    width: 60px;
+    height: 60px;
+}

@@ -1,0 +1,132 @@
+
+.tech-head{
+    margin-top: 4rem;
+    width: 100%;
+    height: 3rem;
+    /* background-color: rgb(49, 47, 47); */
+}
+
+.tech-text1{
+    font-style: italic;
+    font-family:serif;
+    font-weight: bolder;
+    font-size: 40px;
+    color: rgb(38, 75, 57);
+}
+
+.tech-head2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(177, 140, 20);
+}
+
+.cart-btn{
+    margin-top: 10px;
+    margin-left: 16rem;
+    width: 8rem;
+    height: 2.5rem;
+    padding: 0 0 0 0;
+    border: none;
+    justify-content: flex-end;
+}
+
+
+.heart-icon{
+   font-size: 2rem;
+   color: red;
+}
+
+.tech-img{
+    width: 350px;
+    height: 350px;
+    margin-left: 2rem;
+}
+
+@media (min-width: 1200px) {
+    .tech-text1 {
+      font-size: 2.5rem;
+    }
+  
+    .tech-head2 h4 {
+      font-size: 1.75rem;
+    }
+  
+    .card-text {
+      font-size: 1.2rem;
+    }
+  
+    .card-text2 {
+      font-size: 1.1rem;
+    }
+}
+  
+  /* For screens between 768px and 1200px */
+@media (min-width: 768px) and (max-width: 1199px) {
+    .tech-text1 {
+      font-size: 2rem;
+    }
+  
+    .tech-head2 h4 {
+      font-size: 1.5rem;
+    }
+  
+    .card-text {
+      font-size: 1.1rem;
+    }
+  
+    .card-text2 {
+      font-size: 1rem;
+    }
+}
+  
+  /* For screens smaller than 768px */
+@media (max-width: 767px) {
+    .tech-text1 {
+      font-size: 1.5rem;
+    }
+  
+    .tech-head2 h4 {
+      font-size: 1.25rem;
+    }
+  
+    .card-text {
+      font-size: 1rem;
+    }
+  
+    .card-text2 {
+      font-size: 0.9rem;
+    }
+  
+    .card-body2 {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .btn-success {
+      font-size: 0.9rem;
+      padding: 8px 16px;
+    }
+}
+  
+  /* For screens smaller than 360px */
+@media (max-width: 360px) {
+    .tech-text1 {
+      font-size: 1.2rem;
+    }
+  
+    .tech-head2 h4 {
+      font-size: 1rem;
+    }
+  
+    .card-text {
+      font-size: 0.9rem;
+    }
+  
+    .card-text2 {
+      font-size: 0.8rem;
+    }
+  
+    .btn-success {
+      font-size: 0.8rem;
+      padding: 6px 12px;
+    }
+}

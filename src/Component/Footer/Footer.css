@@ -1,0 +1,95 @@
+
+@media (min-width: 1200px) {
+    .footer .container {
+      max-width: 1200px;
+    }
+  
+    .footer h5 {
+      font-size: 1.5rem;
+    }
+  
+    .footer ul li {
+      font-size: 1rem;
+    }
+  
+    .footer .form-control {
+      font-size: 1rem;
+    }
+  
+    .footer .btn-success {
+      font-size: 1rem;
+    }
+}
+  
+  
+@media (min-width: 768px) and (max-width: 1199px) {
+    .footer .container {
+      max-width: 750px;
+    }
+  
+    .footer h5 {
+      font-size: 1.2rem;
+    }
+  
+    .footer ul li {
+      font-size: 0.9rem;
+    }
+  
+    .footer .form-control {
+      font-size: 0.9rem;
+    }
+  
+    .footer .btn-success {
+      font-size: 0.9rem;
+    }
+}
+  
+@media (max-width: 767px) {
+    .footer .container {
+      padding: 0 10px; /* Add some padding on smaller screens */
+    }
+  
+    .footer .row {
+      flex-direction: column;
+    }
+  
+    .footer .col-md-4 {
+      margin-bottom: 20px;
+    }
+  
+    .footer h5 {
+      font-size: 1rem;
+    }
+  
+    .footer ul li {
+      font-size: 0.8rem;
+    }
+  
+    .footer .form-control {
+      font-size: 0.8rem;
+    }
+  
+    .footer .btn-success {
+      font-size: 0.8rem;
+      width: 100%; /* Make button full-width on small screens */
+    }
+}
+  
+ 
+@media (max-width: 360px) {
+    .footer h5 {
+      font-size: 0.9rem;
+    }
+  
+    .footer ul li {
+      font-size: 0.7rem;
+    }
+  
+    .footer .form-control {
+      font-size: 0.7rem;
+    }
+  
+    .footer .btn-success {
+      font-size: 0.7rem;
+    }
+}
