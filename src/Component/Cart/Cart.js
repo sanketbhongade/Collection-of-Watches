@@ -1,48 +1,42 @@
 import React from 'react';
-import './Cart.css';
-import { useCart } from 'react-use-cart';
 
-const Cart = () => {
+const Cart = ({ cartItems, setCartItems }) => {
 
-    const {items, updateItemQuantity}=useCart;
+  const handleRemoveFromCart = (index) => {
+    const updatedCartItems = cartItems.filter((_, i) => i !== index);
+    setCartItems(updatedCartItems);
+  };
 
   return (
-    <>
-      <div className='container'>
-        <h1 className='text-center cart-head'>Cart Collection</h1>
-        <table className='table table-bordered mt-4'>
-            <tr>
-                <th className='tbl-head'>ID</th>
-                <td className='tbl-head'>IMAGE</td>
-                <td className='tbl-head'>NAME</td>
-                <td className='tbl-head'>PRICE</td>
-                <td className='tbl-head'>COLOR</td>
-            </tr>
-            {
-                items.map((cval)=>{
-                    return(
-                        <>
-                            <tr>
-                                <td>{cval.id}</td>
-                                <td><img src={cval.cover} alt='Not found'/></td>
-                                <td className='card-text3'>{cval.name}</td>
-                                <td className='card-text3'>{cval.price}</td>
-                                <td className='card-text3'>{cval.color}</td>
-                                <td className='card-text3'>{cval.action}</td>
-
-                                <td>
-                                    <i className='bi bi-minus' onClick={()=>updateItemQuantity(cval.id, cval.quantity-1)}></i>
-                                </td>
-                                <td>{cval.quantity}</td>
-                            </tr>
-                        </>
-                    )
-                })
-            }
-        </table>
-      </div>
-    </>
-  )
+    <div className="container">
+      <h2 className="mt-4">Your Cart</h2>
+      {cartItems.length === 0 ? (
+        <p>Your cart is empty</p>
+      ) : (
+        <ul className="list-group mt-4">
+          {cartItems.map((item, index) => (
+            <li key={index} className="list-group-item">
+              <div className="row">
+                <div className="col-md-6">
+                  <h5>{item.name}</h5>
+                  <p>Price: {item.price}</p>
+                </div>
+                <div className="col-md-6 text-right">
+                  <img src={item.cover} alt={item.name} style={{ width: '50px' }} />
+                  <button 
+                    className="btn btn-danger ml-2"
+                    onClick={() => handleRemoveFromCart(index)}
+                  >
+                    Remove
+                  </button>
+                </div>
+              </div>
+            </li>
+          ))}
+        </ul>
+      )}
+    </div>
+  );
 }
 
-export default Cart
+export default Cart;

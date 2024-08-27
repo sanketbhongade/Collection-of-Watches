@@ -2,6 +2,9 @@
 .card-head{
   margin-top: 15rem;
 }
+.cart-icon{
+  cursor: pointer;
+}
 
 .card-head2{
   font-family: 'Times New Roman', Times, serif;

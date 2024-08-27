@@ -1,21 +1,25 @@
-import React from 'react'
-// import ProductCart from './Component/Product Cart/ProductCart'
-// import ViewCard from './Component/View Card/ViewCard'
-import Cart from './Component/Cart/Cart'
-// import Navbar from './Component/Navbar/Navbar'
-// import Home from './Component/Home/Home'
+import React, { useState } from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Navbar from './Component/Navbar/Navbar';
+import Home from './Component/Home/Home';
+import ProductDetails from './Component/Product Data/ProductDetails';
+import Cart from './Component/Cart/Cart';
+
 const App = () => {
+  const [cartItems, setCartItems] = useState([]);
+
   return (
     <>
-      {/* <Navbar/>
-      <Home/> */}
-      {/* <ViewCard /> */}
-      <Cart/>
-      {/* <ProductCart/> */}
-      {/* <Route path="/addtocart/:id" element={<AddCart/>} */}
-
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route path='/' element={<Home cartItems={cartItems} setCartItems={setCartItems} />} />
+          <Route path="/product/:id" element={<ProductDetails />} />
+          <Route path="/cart" element={<Cart cartItems={cartItems} setCartItems={setCartItems} />} />
+        </Routes>
+      </Router>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
