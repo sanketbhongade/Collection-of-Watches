@@ -6,11 +6,20 @@
 }
 
 .design-img1{
-    width: 10rem;
+  width: 18rem;
+  height: 37rem;
+
+}
+
+.image-container{
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
 }
 
 .design-img2, .design-img3, .design-img4{
     width: 18rem;
+    height: 37rem;
 }
 
 .h1,.h3{

@@ -1,6 +1,6 @@
 
 .card-head{
-  margin-top: 15rem;
+  margin-top: 3rem;
 }
 .cart-icon{
   cursor: pointer;
@@ -36,16 +36,16 @@
 }
 
 .card-body2{
-
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
 }
 
-/* .cart-btn{
+.cart-btn{
+  margin-left: 13rem;
   display: inline;
   align-items: flex-end;
-} */
+}
 
 /* For screens larger than 1200px */
 @media (min-width: 1200px) {

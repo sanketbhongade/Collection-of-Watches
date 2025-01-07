@@ -5,16 +5,16 @@ import Footer from '../Footer/Footer';
 const Design = () => {
   return (
     <>
-        <div className='container'>
+        <div className='container-fluid'>
             <h1 className='text-center fontfamily3 design-head' data-aos='flip-right'>OUR DESIGNING WATCHES MEN'S & WOMEN'S</h1>
             <div className='container mt-5'>
                 <div className='row'>
 
                     <div className='col-md-3 mb-4'>
                         <div className='card design-img1'>
-                            <div className='image-container'>
+                            <div className='image-container d-flex'>
                                 <img src='https://cdn.shopify.com/s/files/1/0635/2581/4492/files/grid06.jpg?width=300&height=800' alt='img'/>
-                                <img src='https://cdn.shopify.com/s/files/1/0635/2581/4492/files/grid05.jpg?width=300&height=800' alt='img'/>
+                                <img src='https://cdn.shopify.com/s/files/1/0635/2581/4492/files/grid05.jpg?width=300&height=800' className='mt-1' alt='img'/>
                             </div>
                         </div>
                     </div>

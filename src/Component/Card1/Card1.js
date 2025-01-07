@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import Card2 from '../Card2/Card2';
+import Design from '../Design/Design';
 import ProductData from '../Product Data/ProductData';
 import './Card1.css';
 
@@ -52,7 +52,7 @@ const Card1 = ({ cartItems, setCartItems }) => {
                   </h5>
                   <div className='card-body2'>
                     <i className='bi bi-cart fs-2 cart-icon' onClick={() => handleAddToCart(product)}></i>
-                    <button className='btn btn-success' onClick={() => handleViewMore(product.id)}>
+                    <button className='btn btn-success cart-btn' onClick={() => handleViewMore(product.id)}>
                       View more
                     </button>
                   </div>
@@ -62,7 +62,8 @@ const Card1 = ({ cartItems, setCartItems }) => {
           ))}
         </div>
       </div>
-      <Card2 />
+      <Design/>
+      {/* <Card2 cartItems={cartItems} setCartItems={setCartItems}/> */}
     </>
   );
 }

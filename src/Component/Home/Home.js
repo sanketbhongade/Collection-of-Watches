@@ -7,7 +7,7 @@ const Home = ({ cartItems, setCartItems }) => {
     <>
       <div className='container-fluid'>
         <div className='home'>
-          <img src='https://cdn.shopify.com/s/files/1/0635/2581/4492/files/slider_bg.jpg?width=1600&height=500&crop=center' alt='Background'/>
+          <img src='https://cdn.shopify.com/s/files/1/0635/2581/4492/files/slider_bg.jpg?width=1600&height=500&crop=center' className='bg-img' alt='Background'/>
           <div className='home-head'>
             <h2 className='head2'>Welcome to my website</h2>
             <p className='head3'>Collection of watches</p>
